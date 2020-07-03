@@ -1,0 +1,175 @@
+// write a program to print a number in given range by user
+
+
+package mywork;
+
+import java.util.Scanner;
+
+
+public class range {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter a number from 1 to 100");
+		int i=obj.nextInt();
+		if( i>=1 && i<=100)
+		{
+			System.out.println("number is in range" + " " + i);
+		}
+		else if(i<=0 || i>100)
+		{
+			System.out.println("number not in range"+" "+ i);
+		}
+	}
+
+}
+-----------------------------------------------------------------------------
+//largest of a three number
+
+package mywork;
+import java.util.Scanner;
+public class largest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner obj=new Scanner(System.in);
+System.out.println("enter first number");
+int a=obj.nextInt();
+System.out.println("enter second number");
+int b=obj.nextInt();
+System.out.println("enter third number");
+int c=obj.nextInt();
+
+if(a>b && a>c)
+{
+	System.out.println("greatest number"+ a);
+}
+else if(b>a && b>c)
+{
+	System.out.println("greatest number"+b);
+}
+else
+{
+	System.out.println("greatest number"+ c);
+}
+
+	}
+
+}
+---------------------------------------------------------------------
+//reverse of a number
+
+package mywork;
+
+import java.util.Scanner;
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter which number want to reverse");
+		int n=obj.nextInt();
+	int	rem,rev=0;
+	while(n!=0) 
+	{
+		rem=n%10;
+		rev=(rev*10)+rem;
+		n=n/10;		
+	}
+	System.out.println("reversed number is"+" "+rev);
+
+	}
+
+}
+------------------------------------------------------------------------
+//fibbonoci series
+
+
+package mywork;
+
+import java.util.Scanner;
+
+public class fibbonoci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner obj=new Scanner(System.in);
+		int a=0,b=2,c;
+		System.out.println("enter a value");
+		int n=obj.nextInt();
+		System.out.println(a+" "+b);
+		for(int i=1;i<=n;i++)
+		{
+			c=a+b;
+			a=b;
+			b=c;
+		
+		System.out.print(a+" ");
+		
+		
+
+	}
+
+}
+}
+-------------------------------------------------------------------------
+//Amstrong number
+
+package mywork;
+
+import java.util.Scanner;
+
+public class Amstrong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner obj=new Scanner(System.in);
+		int rem,rev=0;
+		System.out.println("enter amstrong number");
+		int n=obj.nextInt();
+		int t=n;
+		
+		while(n!=0)
+		{
+			rem=n%10;
+			rev=(rem*rem*rem)+rev;
+			n=n/10;
+		}
+		if(t==rev)
+		{
+			System.out.println("amstrong number"+" "+ t);
+		}
+		else 
+		{
+			System.out.println("Not amstrong number");
+		}
+
+	}
+
+}
+--------------------------------------------------------------------------
+//Factorial
+
+
+package mywork;
+import java.util.Scanner;
+public class factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner obj=new Scanner(System.in);
+System.out.println("enter factorial number");
+int fact=1;
+int n=obj.nextInt();
+for(int i=1;i<=n;i++)
+{
+	fact=fact*i;
+}
+System.out.println(fact);
+	}
+
+}
